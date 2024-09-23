@@ -11,25 +11,25 @@ interface FishType {
 const fishTypes: FishType[] = [
   {
     name: 'Tilapia',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://cdn.britannica.com/14/162014-050-45C1FD13/warm-bloodedness-opah-results-heat-exchange-system-gills.jpg',
     description: 'Tilapia is a popular freshwater fish known for its mild taste.',
     available: true,
   },
   {
     name: 'Catfish',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://cdn.britannica.com/14/162014-050-45C1FD13/warm-bloodedness-opah-results-heat-exchange-system-gills.jpg',
     description: 'Catfish are bottom feeders with a unique flavor profile.',
     available: false,
   },
   {
     name: 'Salmon',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://cdn.britannica.com/14/162014-050-45C1FD13/warm-bloodedness-opah-results-heat-exchange-system-gills.jpg',
     description: 'Salmon is a nutritious fish rich in omega-3 fatty acids.',
     available: true,
   },
   {
     name: 'Trout',
-    image: 'https://via.placeholder.com/150',
+    image: 'https://cdn.britannica.com/14/162014-050-45C1FD13/warm-bloodedness-opah-results-heat-exchange-system-gills.jpg',
     description: 'Trout is known for its delicate flavor and is a favorite among anglers.',
     available: true,
   },
@@ -47,7 +47,7 @@ const Service: React.FC = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="py-12 mt-12">
+    <div ref={containerRef} className="py-12 mt-12 text-cyan-50">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-bold text-center mb-6">Our Fish Types</h1>
         <p className="text-lg text-center mb-8">
@@ -55,7 +55,7 @@ const Service: React.FC = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {fishTypes.map((fish, index) => (
-            <div key={index} className="bg-[#0b2f2a] p-6 rounded-lg shadow-lg text-cyan-50">
+            <div key={index} className="bg-[#092420] p-6 rounded-lg shadow-lg text-cyan-50">
               <img
                 src={fish.image}
                 alt={fish.name}

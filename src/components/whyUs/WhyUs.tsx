@@ -22,7 +22,7 @@ const WhyUs: React.FC = () => {
   };
 
   return (
-    <section className="bg-white text-black py-12">
+    <section className=" text-cyan-50 py-12">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-bold text-center mb-6">Why Choose Us?</h1>
         <p className="text-lg text-center mb-8">

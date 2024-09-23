@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoMdContact, IoMdHome } from 'react-icons/io';
 import { SiAmazonsimpleemailservice } from 'react-icons/si';
 import { FcAbout } from 'react-icons/fc';
 import { LuMenu, LuX } from 'react-icons/lu'; // Importing icons for menu
 import ContactHeader from './ContactHeader';
+import "./header.css"
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
