@@ -22,7 +22,7 @@ const WhyUs: React.FC = () => {
   };
 
   return (
-    <section className=" text-cyan-50 py-12">
+    <section className=" text-cyan-50 py-12 why-us">
       <div className="container mx-auto px-6">
         <h1 className="text-4xl font-bold text-center mb-6">Why Choose Us?</h1>
         <p className="text-lg text-center mb-8">
@@ -51,15 +51,7 @@ const WhyUs: React.FC = () => {
             </div>
           ))}
         </div>
-        <div className="mt-12 text-center">
-          <h2 className="text-2xl font-semibold mb-6">Our Commitment</h2>
-          <p className="mb-6">
-            We are committed to transparency, sustainability, and quality in everything we do.
-          </p>
-          <button className="font-semibold py-2 px-4 rounded mx-auto flex justify-center items-center underline scroll-down-icon">
-           {<BiDownArrow/>}
-          </button>
-        </div>
+       
       </div>
     </section>
   );

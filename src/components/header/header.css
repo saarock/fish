@@ -1,3 +1,9 @@
 .contact-header {
     border-bottom: 1px solid rgba(238, 238, 238, 0.249);
 }
+header {
+    position: sticky;
+    top: 0;
+    background-color: #0b2f2a;
+    z-index: 9999;
+}

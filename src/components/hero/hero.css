@@ -98,6 +98,13 @@
     background-color: white;
     color: #007bff;
   }
+
+  .main-h1 {
+    text-shadow: 3px 3px 0 #151212,   /* First shadow layer */
+                 6px 6px 0 #100f0f,   /* Second shadow layer */
+                 9px 9px 0 #000000;   /* Third shadow layer */
+  }
+  
   
   /* Responsive design */
   @media (max-width: 768px) {

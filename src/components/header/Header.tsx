@@ -19,7 +19,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="bg-gradient-to-r from-[#0b2f2a] to-[#0f4f4c] text-cyan-50 shadow-lg">
+        <header className="bg-gradient-to-r from-[#0b2f2a] text-cyan-50 shadow-lg">
         <nav className="container mx-auto flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center" style={{cursor: "pointer"}} onClick={() => navigate("/")}>
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
     
             {/* Contact Details */}
-            <div className="hidden md:flex space-x-6 text-sm">
+            <div className="hidden md:flex space-x-6">
                 <span className="hover:text-white transition duration-200">Email: info@example.com</span>
                 <span className="hover:text-white transition duration-200">Phone: +123 456 7890</span>
             </div>
@@ -45,7 +45,7 @@ const Header = () => {
                         <NavLink
                             to={currentNav.slug}
                             className={({ isActive }) =>
-                                `flex items-center px-3 py-2 rounded-lg transition duration-200 ${
+                                `flex items-center px-3 py-2 rounded-3xl transition duration-200 ${
                                     isActive ? 'bg-[#0f4f4c] text-white' : 'hover:bg-[#1e3f3f] hover:text-white'
                                 }`
                             }

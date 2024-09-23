@@ -1,6 +1,7 @@
 import Hero from '../../components/hero/Hero'
 import WhyUs from '../../components/whyUs/WhyUs'
 import CompanyHead from '../../components/companyHead/CompanyHead'
+import { OurGallary } from '../../components'
 
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
       <WhyUs/>
       {/* <FishDetails/> */}
       <CompanyHead/>
-
+      {/* <OurGallary/> */}
       </div>
   )
 }

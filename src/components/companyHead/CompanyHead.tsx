@@ -33,8 +33,6 @@ const employees: Employee[] = [
 ];
 
 const CompanyHead: React.FC = () => {
-
-
   return (
     <section className="bg-[#092420] py-12 text-cyan-50 all-worker">
       <div className="container mx-auto px-6">
@@ -42,7 +40,7 @@ const CompanyHead: React.FC = () => {
         <p className="text-lg text-center mb-8">
           Our dedicated team is committed to sustainable fish farming and delivering high-quality products.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {employees.map((employee, index) => (
             <div
               key={index}
@@ -51,21 +49,20 @@ const CompanyHead: React.FC = () => {
               <img
                 src={employee.image}
                 alt={employee.name}
-                className="w-full h-72 object-cover transition-transform duration-300 hover:scale-110"
+                className="w-full h-56 sm:h-72 object-cover transition-transform duration-300 hover:scale-110"
               />
-              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
-                <h2 className="text-xl font-semibold text-white">{employee.name}</h2>
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300 p-4">
+                <h2 className="text-lg font-semibold text-white">{employee.name}</h2>
                 <p className="text-sm text-white">{employee.position}</p>
-                <p className="text-xs text-white mt-2">{employee.details}</p>
+                <p className="text-xs text-white text-center mt-2">{employee.details}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      <WhenToContactWho/>
-      <PositiveMessage/>
-
+      <WhenToContactWho />
+      {/* <PositiveMessage /> */}
     </section>
   );
 };

@@ -68,10 +68,10 @@ const Hero = () => {
       <div
         className="hero-background"
         ref={sliderRef}
-        style={{ backgroundImage: `url(${images[currentImage]})`, zIndex: 0}}
+        style={{ backgroundImage: `url(${images[currentImage]})`, zIndex: -1}}
       ></div>
       <div className="hero-content">
-        <h1 ref={heroText}>Revolutionizing Fish Farming</h1>
+        <h1 ref={heroText} className='main-h1'>Revolutionizing Fish Farming</h1>
         <p ref={heroParagraph}>Sustainable, scalable, and profitable fish farming solutions.</p>
         <div className="hero-buttons" ref={heroButtons}>
           <button className="hero-btn" style={{display: "flex", justifyContent:"center", alignItems: "center"}}>Learn More{<FaAngleDoubleDown />}</button>
