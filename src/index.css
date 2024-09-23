@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* font-family: 'Georgia', 'Times New Roman', serif; */
+  background-color: var(--bg-light);
+
+
+}
+:root {
+  --background-div : #092420;
+  --button-color: #448c74;
+  --bg-light: #fdfdfd;
+}
+
+.icon {
+  color: white;
+  font-size: 1.4rem;
+}

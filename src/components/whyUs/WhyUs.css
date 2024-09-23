@@ -1,0 +1,13 @@
+.scroll-down-icon {
+    font-size: 3rem;
+    animation: top-down infinite 2s;
+    position: relative;
+}
+@keyframes top-down {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 2rem;
+    }
+}
