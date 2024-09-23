@@ -1,12 +1,14 @@
-import React from 'react';
-import "./header.css"; // You can keep your custom styles here
-import ContactHeader from './ContactHeader';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { IoMdContact, IoMdHome } from 'react-icons/io';
 import { SiAmazonsimpleemailservice } from 'react-icons/si';
 import { FcAbout } from 'react-icons/fc';
+import { LuMenu, LuX } from 'react-icons/lu'; // Importing icons for menu
+import ContactHeader from './ContactHeader';
 
-const Header: React.FC = () => {
+const Header = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    
     const navs = [
         { id: 1, name: "Home", slug: "/", icon: <IoMdHome /> },
         { id: 2, name: "Service", slug: "/service", icon: <SiAmazonsimpleemailservice /> },
@@ -15,24 +17,32 @@ const Header: React.FC = () => {
     ];
 
     return (
-        <div className="bg-[#0b2f2a] text-cyan-50">
+        <header className="bg-[#0b2f2a] text-cyan-50 shadow-lg">
             <ContactHeader />
-            <nav className="container mx-auto flex flex-col md:flex-row justify-between items-center py-4">
-                <div className="flex space-x-4">
+            <nav className="container mx-auto flex justify-between items-center py-4">
+                <div className="text-2xl font-bold">Fish Farming Co.</div>
+                <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
+                    {isOpen ? <LuX className="text-2xl" /> : <LuMenu className="text-2xl" />}
+                </button>
+                <ul className={`flex-col md:flex md:flex-row space-x-4 absolute md:static bg-[#0b2f2a] md:bg-transparent transition-all duration-300 ${isOpen ? 'top-12 left-0 w-full' : 'top-[-200px] md:top-0'}`}>
                     {navs.map((currentNav) => (
-                        <NavLink
-                            key={currentNav.id}
-                            to={currentNav.slug}
-                            className={({ isActive }) => `flex items-center p-2 rounded-md transition duration-300 
-                                ${isActive ? 'bg-[#2c7f7f]' : 'hover:bg-[#1c3f3f]'}`}
-                        >
-                            {currentNav.icon}
-                            <span className="ml-2">{currentNav.name}</span>
-                        </NavLink>
+                        <li key={currentNav.id} className="md:mr-4">
+                            <NavLink
+                                to={currentNav.slug}
+                                className={({ isActive }) =>
+                                    `flex items-center px-3 py-2 rounded-lg transition duration-200 ${
+                                        isActive ? 'bg-[#0f4f4c] text-white' : 'hover:bg-[#1e3f3f] hover:text-white'
+                                    }`
+                                }
+                            >
+                                {currentNav.icon}
+                                <span className="ml-2">{currentNav.name}</span>
+                            </NavLink>
+                        </li>
                     ))}
-                </div>
+                </ul>
             </nav>
-        </div>
+        </header>
     );
 };
 
