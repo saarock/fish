@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import "./CompanyHead.css";
 import WhenToContactWho from '../WhenToContactWhom/WhenToContactWho';
 import PositiveMessage from '../positiveMessage/PositiveMessage';

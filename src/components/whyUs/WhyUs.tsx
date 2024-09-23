@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, {  useRef } from 'react';
 import { gsap } from 'gsap';
 import { BiDownArrow } from 'react-icons/bi';
 import "./WhyUs.css"
