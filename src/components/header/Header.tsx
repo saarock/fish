@@ -39,7 +39,7 @@ const Header = () => {
             </button>
     
             {/* Navigation Links */}
-            <ul className={`flex-col md:flex md:flex-row space-x-4 absolute md:static bg-[#0b2f2a] z-50 md:bg-transparent transition-all duration-300 ${isOpen ? 'top-12 left-0 w-full' : 'top-[-200px] md:top-0'}`}>
+            <ul className={`flex-col md:flex md:flex-row absolute md:static bg-[#0b2f2a] z-50 md:bg-transparent transition-all duration-300 ${isOpen ? 'top-12 left-0 w-full' : 'top-[-200px] md:top-0'}`}>
                 {navs.map((currentNav) => (
                     <li key={currentNav.id} className="md:mr-4">
                         <NavLink
