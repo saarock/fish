@@ -1,7 +1,7 @@
 import React from 'react';
 import "./CompanyHead.css";
 import WhenToContactWho from '../WhenToContactWhom/WhenToContactWho';
-import PositiveMessage from '../positiveMessage/PositiveMessage';
+
 
 interface Employee {
   name: string;
