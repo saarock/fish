@@ -2,7 +2,7 @@ import React from 'react';
 
 const ComingSoon: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#1c3f3f] text-cyan-50">
+    <div className="flex flex-col items-center justify-center min-h-screen text-cyan-50 bg-[#092420]">
       <h1 className="text-5xl font-bold mb-4 text-center">Contact Us - Coming Soon!</h1>
       <p className="text-lg text-center mb-8">
         We're working hard to get our contact features ready. Stay tuned for updates!
