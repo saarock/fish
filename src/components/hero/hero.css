@@ -1,7 +1,7 @@
 .hero-container {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,4 +120,49 @@
       align-items: center;
     }
   }
+  
+  .hero-container {
+    position: relative;
+    height: 100vh; /* Adjust as needed */
+    overflow: hidden;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust overlay as needed */
+    z-index: 1;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Adjust video fit */
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2; /* Ensure content is above overlay */
+  }
+  
+  /* Add styles for buttons and text as needed */
   
