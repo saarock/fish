@@ -15,6 +15,7 @@ body {
 }
 :root {
   --background-div : #092420;
+  --background-div-light : #092420e0;
   --button-color: #448c74;
   --bg-light: #fdfdfd;
 }

@@ -33,7 +33,7 @@ const WhyUs: React.FC = () => {
             <div 
               key={index} 
               ref={el => cardRefs.current[index] = el} 
-              className="bg-[#092420] p-6 rounded-lg shadow-lg text-cyan-50"
+              className="bg-[#0e2b27e0] p-6 rounded-lg shadow-lg text-cyan-50"
               onMouseEnter={() => animateIn(index)}
               onMouseLeave={() => animateOut(index)}
             >

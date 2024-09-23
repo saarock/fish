@@ -58,7 +58,7 @@ const WhenToContactWho: React.FC = () => {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {contacts.map((contact, index) => (
-            <div key={index} className="bg-[#092420] p-6 rounded-lg shadow-lg text-cyan-50">
+            <div key={index} className="bg-[#0e2b27e0] p-6 rounded-lg shadow-lg text-cyan-50">
               <img
                 src={contact.image}
                 alt={contact.name}
