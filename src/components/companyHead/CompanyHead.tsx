@@ -26,7 +26,7 @@ const employees: Employee[] = [
   {
     name: 'Subash Basnet',
     position: 'Aquaculture Specialist',
-    image: 'https://scontent.fktm7-1.fna.fbcdn.net/v/t1.6435-9/80352536_1376010309419855_8068342957436043264_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=c7cdda&_nc_eui2=AeEXJlMJ5BUcbodGKa-anIhRiSmHiE-3R3qJKYeIT7dHeml0LPp6nq5LT_OZx6jiagFqRlCkyzIGtyWSBsyMVaFi&_nc_ohc=BWNotosq1DgQ7kNvgHt1IfQ&_nc_ht=scontent.fktm7-1.fna&oh=00_AYCQR3RvMzzMOWylhCeVbEqj1m0J4h8RXrY177twY3UmoQ&oe=6718989D',
+    image: 'https://scontent.xx.fbcdn.net/v/t1.15752-9/455675766_354491721063959_2539462229640721232_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Lk6iYdt402gQ7kNvgGNAds9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AvFvsmVThWSbJmqu0kVN7kN&oh=03_Q7cD1QGUbR_tzFq6OkuCh-AtJQje43pWXslVmzWXJrNSms8ZDA&oe=6718C3C5',
     details: 'Subash Basnet specializes in fish health and environmental practices.',
   },
   // Add more employees as needed
