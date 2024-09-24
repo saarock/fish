@@ -3,6 +3,7 @@ import "./CompanyHead.css";
 import WhenToContactWho from '../WhenToContactWhom/WhenToContactWho';
 
 
+
 interface Employee {
   name: string;
   position: string;
@@ -11,6 +12,12 @@ interface Employee {
 }
 
 const employees: Employee[] = [
+  {
+    name: 'Subash Basnet',
+    position: 'Aquaculture Specialist',
+    image: 'https://scontent.xx.fbcdn.net/v/t1.15752-9/455675766_354491721063959_2539462229640721232_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Lk6iYdt402gQ7kNvgGNAds9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AvFvsmVThWSbJmqu0kVN7kN&oh=03_Q7cD1QGUbR_tzFq6OkuCh-AtJQje43pWXslVmzWXJrNSms8ZDA&oe=6718C3C5',
+    details: 'Subash Basnet specializes in fish health and environmental practices.',
+  },
   {
     name: 'Dev Bahadur Basnet',
     position: 'CEO',
@@ -23,12 +30,6 @@ const employees: Employee[] = [
     image: 'https://scontent.fktm10-1.fna.fbcdn.net/v/t39.30808-6/331419681_578746817238966_411909836266333695_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeGO67ChJSYSXvsI402_O1qVW6LDOV21ze1bosM5XbXN7TSNiFaf024B0UdPgF3gC4g_wMK5YBzVMlkf_rnmd6II&_nc_ohc=08UxuXsoasYQ7kNvgGevacP&_nc_ht=scontent.fktm10-1.fna&_nc_gid=Aoqb_5a6YPjB2_m4l9_s5MH&oh=00_AYC5AMffn3Je6HH0TAFcdkzVv_6Aqxk_QZUQ-DrdDN240A&oe=66F6DBBA',
     details: 'Khagendra Adhikari ensures smooth operations and quality control.',
   },
-  {
-    name: 'Subash Basnet',
-    position: 'Aquaculture Specialist',
-    image: 'https://scontent.xx.fbcdn.net/v/t1.15752-9/455675766_354491721063959_2539462229640721232_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=Lk6iYdt402gQ7kNvgGNAds9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AvFvsmVThWSbJmqu0kVN7kN&oh=03_Q7cD1QGUbR_tzFq6OkuCh-AtJQje43pWXslVmzWXJrNSms8ZDA&oe=6718C3C5',
-    details: 'Subash Basnet specializes in fish health and environmental practices.',
-  },
   // Add more employees as needed
 ];
 
@@ -36,9 +37,12 @@ const CompanyHead: React.FC = () => {
   return (
     <section className="bg-[#092420] py-12 text-cyan-50 all-worker">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-6">Meet Our Team</h1>
+        <h1 className="text-4xl font-bold text-center mb-6 relative">
+          Meet Our Team
+        </h1>
         <p className="text-lg text-center mb-8">
           Our dedicated team is committed to sustainable fish farming and delivering high-quality products.
+          
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {employees.map((employee, index) => (

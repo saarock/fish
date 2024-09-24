@@ -5,4 +5,5 @@ import PositiveMessage from "./positiveMessage/PositiveMessage";
 import ComingSoon from "./commingSoon/CommingSoon";
 import FishDetails from "./FishDetails/FishDetails";
 import OurGallary from "./ourGallary/OurGallary";
-export {Header,ComingSoon, Footer, WhenToContactWho, PositiveMessage,FishDetails, OurGallary};
+import FishAnimation from "./fishAnimation/FishAnimation";
+export {Header,ComingSoon, Footer, WhenToContactWho, PositiveMessage,FishDetails, OurGallary, FishAnimation};

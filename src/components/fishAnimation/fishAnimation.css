@@ -1,0 +1,8 @@
+.fish-animation {
+    position: absolute;
+    top: 1rem;
+    width: 150px; /* Adjust the width */
+  height: 150px; /* Adjust the height */
+  left: 44%;
+  z-index: -1;
+}
