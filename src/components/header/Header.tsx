@@ -19,7 +19,7 @@ const Header = () => {
     ];
 
     return (
-        <header className="bg-gradient-to-r bg-[#0b2f2a] text-cyan-50 shadow-lg">
+        <div className="bg-gradient-to-r bg-[#0b2f2a] text-cyan-50 shadow-lg">
         <nav className="container mx-auto flex justify-between items-center py-4">
             {/* Logo */}
             <div className="flex items-center" style={{cursor: "pointer"}} onClick={() => navigate("/")}>
@@ -57,7 +57,7 @@ const Header = () => {
                 ))}
             </ul>
         </nav>
-    </header>
+    </div>
     
     );
 };

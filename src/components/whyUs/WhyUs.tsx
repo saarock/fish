@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { gsap } from 'gsap';
-
+import HeaderContent from '../headerContent/HeaderContent';
 import "./WhyUs.css";
 
 const WhyUs: React.FC = () => {
@@ -42,12 +42,8 @@ const WhyUs: React.FC = () => {
   return (
     <section className="text-cyan-50 py-12 why-us">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-6 relative">Why Choose Us?
-
-        </h1>
-        <p className="text-lg text-center mb-8 relative">
-          We are committed to providing high-quality fish while ensuring sustainable practices.
-        </p>
+        
+        <HeaderContent heading='Why Choose Us?' content=" We are committed to providing high-quality fish while ensuring sustainable practices."/>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((card, index) => (
             <div 

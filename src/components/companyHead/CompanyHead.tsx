@@ -1,6 +1,7 @@
 import React from 'react';
 import "./CompanyHead.css";
 import WhenToContactWho from '../WhenToContactWhom/WhenToContactWho';
+import HeaderContent from '../headerContent/HeaderContent';
 
 
 
@@ -37,13 +38,8 @@ const CompanyHead: React.FC = () => {
   return (
     <section className="bg-[#092420] py-12 text-cyan-50 all-worker">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-6 relative">
-          Meet Our Team
-        </h1>
-        <p className="text-lg text-center mb-8">
-          Our dedicated team is committed to sustainable fish farming and delivering high-quality products.
-          
-        </p>
+     
+        <HeaderContent heading="Meet Our Team" content='Our dedicated team is committed to sustainable fish farming and delivering high-quality products.'/>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {employees.map((employee, index) => (
             <div

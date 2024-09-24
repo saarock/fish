@@ -1,4 +1,5 @@
 import React from "react";
+import HeaderContent from "../headerContent/HeaderContent";
 
 interface ContactInfo {
   name: string;
@@ -46,12 +47,10 @@ const WhenToContactWho: React.FC = () => {
   return (
     <div className="text-cyan-50 py-12 mt-12">
       <div className="container mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-6 relative">
-          When to Contact Who
-        </h1>
-        <p className="text-lg text-center mb-8">
-          Know who to contact for specific queries in our fish farming business.
-        </p>
+     
+
+        <HeaderContent heading=" When to Contact Who" content="Know who to contact for specific queries in our fish farming business."/>
+      
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {contacts.map((contact, index) => (
             <div

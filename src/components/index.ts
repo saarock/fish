@@ -6,4 +6,5 @@ import ComingSoon from "./commingSoon/CommingSoon";
 import FishDetails from "./FishDetails/FishDetails";
 import OurGallary from "./ourGallary/OurGallary";
 import FishAnimation from "./fishAnimation/FishAnimation";
-export {Header,ComingSoon, Footer, WhenToContactWho, PositiveMessage,FishDetails, OurGallary, FishAnimation};
+import HeaderContent from "./headerContent/HeaderContent";
+export {Header,ComingSoon, HeaderContent,Footer, WhenToContactWho, PositiveMessage,FishDetails, OurGallary, FishAnimation};
