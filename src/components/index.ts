@@ -7,4 +7,5 @@ import FishDetails from "./FishDetails/FishDetails";
 import OurGallary from "./ourGallary/OurGallary";
 import FishAnimation from "./fishAnimation/FishAnimation";
 import HeaderContent from "./headerContent/HeaderContent";
+import BackToTop from "./backToTop/BackToTop";
 export {Header,ComingSoon, HeaderContent,Footer, WhenToContactWho, PositiveMessage,FishDetails, OurGallary, FishAnimation};

@@ -1,0 +1,22 @@
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(16, 38, 16); /* Green background */
+    color: white;
+    padding: 10px; /* Padding for better button size */
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer;
+    transition: background 0.3s ease, border-width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px; /* Ensure it covers the parent div */
+    width: 80px;  /* Ensure it covers the parent div */
+    z-index: 1000; /* Ensure the button is above other elements */
+}
+
+/* Optional hover effect */
+.back-to-top:hover {
+    background-color: rgba(6, 41, 6, 0.9); /* Darker green on hover */
+}
