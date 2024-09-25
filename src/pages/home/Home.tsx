@@ -7,13 +7,13 @@ import { OurGallary } from '../../components'
 
 const Home = () => {
   return (
-    <div>
+    <>
       {<Hero/>}
       <WhyUs/>
       {/* <FishDetails/> */}
       <CompanyHead/>
       <OurGallary/>
-      </div>
+      </>
   )
 }
 

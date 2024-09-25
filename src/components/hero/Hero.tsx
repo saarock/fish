@@ -71,7 +71,7 @@ const Hero = () => {
   const isVideo = media[currentMedia].endsWith('.mp4');
 
   return (
-    <div className="hero-container">
+    <section className="hero-container">
       <div className="hero-overlay"></div>
       <div
         className="hero-background"
@@ -98,7 +98,7 @@ const Hero = () => {
           <button className="hero-btn-1" style={{display: "flex", justifyContent:"center", alignItems: "center"}}>Contact Us{<FaAngleDoubleRight />}</button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
