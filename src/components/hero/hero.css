@@ -30,6 +30,7 @@
     z-index: 0;
     transition: opacity 1.5s ease-in-out;
     z-index: 1;
+    filter: blur(6px);
   }
   
   .hero-content {
@@ -98,12 +99,6 @@
     color: #007bff;
   }
 
-  .main-h1 {
-    text-shadow: 3px 3px 0 #000000,   /* First shadow layer */
-                 6px 6px 0 #000000,   /* Second shadow layer */
-                 9px 9px 0 #000000;   /* Third shadow layer */
-  }
-  
   
   /* Responsive design */
   @media (max-width: 768px) {

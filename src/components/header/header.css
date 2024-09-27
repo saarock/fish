@@ -6,6 +6,7 @@ header {
     top: 0;
     background-color: #0b2f2a;
     z-index: 9999;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .link-nav {
     position: relative;

@@ -80,11 +80,11 @@ const Service: React.FC = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center items-center">
           {filteredFishTypes.map((fish, index) => (
             <div
               key={index}
-              className="fish-card bg-[#0e2b27e0] p-6 rounded-lg shadow-xl hover:shadow-green-900 transition duration-300 hover:scale-105 transform text-[#f5f5f5]"
+              className="fish-card bg-[#0e2b27e0] p-6 rounded-lg shadow-xl transition duration-300 hover:scale-105 transform text-[#f5f5f5]"
             >
               <img
                 src={fish.image}
